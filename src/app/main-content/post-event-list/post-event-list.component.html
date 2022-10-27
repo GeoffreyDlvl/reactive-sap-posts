@@ -1,0 +1,8 @@
+<div class="post-event-list">
+  <h3>List of events</h3>
+  <ng-container *ngFor="let postEvent of postEvents$ | async">
+    <div class="post-event-item">
+      {{ postEvent.print() }}
+    </div>
+  </ng-container>
+</div>

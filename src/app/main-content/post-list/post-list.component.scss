@@ -1,0 +1,29 @@
+:host {
+  min-width: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: #fffd54;
+  padding: 0.5em;
+
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    input {
+      margin-bottom: 0.5em;
+    }
+
+    .post-item {
+      padding: 0.2em;
+      border: 1.5px black solid;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .selected {
+      border-color: red;
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+:host {
+  min-width: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 0.5em;
+  background-color: #f5c2cb;
+
+  .post-event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    .post-event-item {
+      padding: 0.2em;
+      border: 1.5px black solid;
+      border-radius: 8px;
+    }
+  }
+}
+

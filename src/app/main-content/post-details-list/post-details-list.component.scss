@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .post-details-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="title">Create a new post</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label for="name">Name</label>
+    <input formControlName="name" type="text" id="name" minlength="6" />
+    <span
+      class="error-message"
+      *ngIf="!nameControl.valid && nameControl.touched"
+      >Should be at lease 6 characters</span
+    >
+  </div>
+
+  <div class="field">
+    <label for="content">Content</label>
+    <textarea formControlName="content" rows="5" id="content"></textarea>
+  </div>
+
+  <div class="actions">
+    <button type="reset" (click)="onReset()">Reset</button>
+    <button type="submit" [disabled]="!form.valid">Save</button>
+  </div>
+</form>
